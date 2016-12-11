@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `input_field` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `field_value` varchar(500) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
