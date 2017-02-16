@@ -83,12 +83,36 @@
 </nav>
 </div>
 <div class="bannerwrapper">
-<div class="container-fluid" style=" height: 330px;  overflow: hidden;  background-color: #494949;">
-<div class="profile-img">
-<img src="asset/profile-img/boy-512.png" style="border:10px solid white; width: 180px; display: inline-block; border-radius: 10px; background-color: #fff;" alt="profile-img" >
+  <div class="container-fluid" style=" height: 330px;  overflow: hidden;  background-color: #494949;">
+    <div class="profile-img">
+      <img src="asset/profile-img/boy-512.png" style="border:10px solid white; width: 180px; display: inline-block; border-radius: 10px; background-color: #fff;" alt="profile-img" >
+    </div>
+  </div>
 </div>
 </div>
-</div>
-</div>
+
+<div class="wrapper_1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="cal-12 col-md-3 push-md-9 left_wrapper">
+        <div class=left_upper>
+          <h3>Full Name</h3>
+          <h5>Username</h5>
+          <hr>
+          <p>This is About You</p>
+        </div>
+        <div class="left_lower">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary" style="width: 100%; align-content: center; margin-bottom: 1%; margin-top: 10%;">Follow</button>
+              <button type="button" class="btn btn-secondary" style="width:100%;">Report</button>
+            </div>
+        </div>
+      </div>
+      <div class="cal-12 col-md-9 pull-md-3 right_wrapper">
+        <p>test</p>
+      </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

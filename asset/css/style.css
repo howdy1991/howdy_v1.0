@@ -58,3 +58,6 @@
   left: initial;
   font-size: 14px;
 }
+.wrapper_1{padding-left: 10%; padding-right: 10%; max-width: 100%; margin-top:1%; position: relative; margin-bottom: 1%;}
+.left_wrapper{float: left; background-color: #F7F8FF; border-radius: 2px; overflow: hidden;}
+.right_wrapper{float: left;  border-radius: 2px; overflow-wrap: hidden;}
