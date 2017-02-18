@@ -3,6 +3,7 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+.navigationmenu{background-color: #0094ae; color: #fff;}
 #headernavigation{position: fixed; width: 100%; position: relative; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 #logoimage{}
 #activeclass{background-color: #20fcea;}
@@ -78,4 +79,5 @@
 .result p:hover{
         background: #04c2aa;
     }
+    .textara{width: 100%;}
 
