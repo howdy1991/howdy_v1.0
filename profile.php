@@ -18,6 +18,35 @@
 	<script  src="asset/js/bootstrap-min.js"> </script>
 	<script  src="asset/js/bootstrap.js"> </script>
 	<script  src="asset/js/npm.js"> </script>
+
+<!-- This for the search section-->
+  </style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.search-box input[type="text"]').on("keyup input", function(){
+        /* Get input value on change */
+        var term = $(this).val();
+        var resultDropdown = $(this).siblings(".result");
+        if(term.length){
+            $.get("backend-search.php", {query: term}).done(function(data){
+                // Display the returned data in browser
+                resultDropdown.html(data);
+            });
+        } else{
+            resultDropdown.empty();
+        }
+    });
+    
+    // Set search input value on click of result item
+    $(document).on("click", ".result p", function(){
+        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
+        $(this).parent(".result").empty();
+    });
+});
+</script>
+<!-- This for the search section-->
+
 </head>
 
 <body>
@@ -60,11 +89,12 @@
         <div class="row">
         <div class="col-md-4 col-md-offset-3">
             <form action="" class="search-form">
-                <div class="form-group has-feedback">
-            		<label for="search" class="sr-only">Search</label>
-            		<input type="text" class="form-control" name="search" id="search" placeholder="search">
-              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
-            	</div>
+                <div class="search-box">
+                    <label for="search" class="sr-only">Search</label>
+                    <input type="text" autocomplete="off" class="form-control" id="search" placeholder="Search by name ....." />
+                    
+                    <div class="result"></div>
+                </div>
             </form>
         </div>
     </div>
