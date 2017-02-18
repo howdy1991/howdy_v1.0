@@ -54,6 +54,7 @@
             <li><a href="#">Advertisement</a></li>
           </ul>
         </li>
+        <li><a href="#"><span class="glyphicon glyphicon-edit" style="font-weight: 15px;"></span></a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="row">
@@ -97,19 +98,34 @@
       <div class="cal-12 col-md-3 push-md-9 left_wrapper">
         <div class=left_upper>
           <h3>Full Name</h3>
-          <h5>Username</h5>
-          <hr>
-          <p>This is About You</p>
-        </div>
-        <div class="left_lower">
-            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary" style="width: 100%; align-content: center; margin-bottom: 1%; margin-top: 10%;">Follow</button>
-              <button type="button" class="btn btn-secondary" style="width:100%;">Report</button>
+          <h4>Username</h4>
+            <div class="about">
+               <p>This is About You</p>
             </div>
         </div>
+        <hr>
+          <div class="left_lower">
+            <div class="address">
+              <p class="glyptext"><span class="glyphicon glyphicon-briefcase">&nbsp;Office Name</p></span>
+              <p class="glyptext"><span class="glyphicon glyphicon-envelope">&nbsp;abx@gmail.com</p></span>
+              <p class="glyptext"><span class="glyphicon glyphicon-home">&nbsp;<a href="https://en.wikipedia.org/wiki/North_America">Your address</a></p></span>
+            </div>
+          </div>
+        <hr>
+        <div class="left_lower">
+            <div class="btn-group btn-group-sm" role="group">
+              <button type="button" class="btn btn-primary btn-sm">Follow</button>
+              <button type="button" class="btn btn-primary btn-sm">Report</button>
+            </div>
+        </div>
+       
+
       </div>
       <div class="cal-12 col-md-9 pull-md-3 right_wrapper">
-        <p>test</p>
+        <div class="form-group">
+          <label for="comment"></label>
+          <textarea class="form-control active" rows="5" id="comment" placeholder="Write your text here..."></textarea>
+        </div>
       </div>
       </div>
     </div>
