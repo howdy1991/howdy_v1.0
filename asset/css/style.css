@@ -81,3 +81,9 @@
     }
     .textara{width: 100%;}
 
+.ahypr{color: #fff;}
+.ahypr:hover{color:#333;}
+.Post{float: right; margin-top: 1%;}
+.browse{float: left; margin-top: 1%;}
+.post-section{width: 100%; background-color: #f1f1f1;border-radius: 3px; padding: 1%; border-bottom: 1px solid #b7b7b7;margin-bottom: 1%; }
+.post-image-profile{border:2px solid white; width: 30px; display: inline-block; border-radius: 2px; background-color: #fff;}

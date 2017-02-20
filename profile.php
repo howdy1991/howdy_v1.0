@@ -67,27 +67,27 @@ $(document).ready(function(){
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #fff;">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" >
         <li class="active" style="background-color: #20fcea;"><a href="#">Profile <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="#"><span class="ahypr">News</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Messages <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="ahypr">Messages</span><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">Sent Messages</a></li>
-            <li><a href="#">Send Something</a></li>
+            <li><a href="#"><span class="ahypr">Inbox</span></a></li>
+            <li><a href="#"><span class="ahypr">Sent Messages</span></a></li>
+            <li><a href="#"><span class="ahypr">Send Something</span></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Saved Messages</a></li>
+            <li><a href="#"><span class="ahypr">Saved Messages</span></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Advertisement</a></li>
+            <li><a href="#"><span class="ahypr">Advertisement</span></a></li>
           </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-edit" style="font-weight: 15px;"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-edit ahypr" style="font-weight: 15px;"></span></a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="row">
-        <div class="col-md-4 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-3">
             <form action="" class="search-form">
                 <div class="search-box">
                     <label for="search" class="sr-only">Search</label>
@@ -100,13 +100,13 @@ $(document).ready(function(){
     </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-blackboard" style="font-weight: 15px;"></span></a></li>
-        <li><a href="#">Profile Settings</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-blackboard ahypr" style="font-weight: 15px;"></span></a></li>
+        <li><a href="#"><span class="ahypr">Profile Settings</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Howdy <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="ahypr">Howdy </span><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="#"><span class="ahypr">Security</span></a></li>
+            <li><a href="#"><span class="ahypr">Logout</span></a></li>
           </ul>
         </li>
       </ul>
@@ -137,9 +137,9 @@ $(document).ready(function(){
         <hr>
           <div class="left_lower">
             <div class="address">
-              <p class="glyptext"><span class="glyphicon glyphicon-briefcase">&nbsp;Office Name</p></span>
-              <p class="glyptext"><span class="glyphicon glyphicon-envelope">&nbsp;abx@gmail.com</p></span>
-              <p class="glyptext"><span class="glyphicon glyphicon-home">&nbsp;<a href="https://en.wikipedia.org/wiki/North_America">Your address</a></p></span>
+              <p class="glyptext"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Office Name</p>
+              <p class="glyptext"><span class="glyphicon glyphicon-envelope"></span>&nbsp;abx@gmail.com</p>
+              <p class="glyptext"><span class="glyphicon glyphicon-home"></span>&nbsp;<a href="https://en.wikipedia.org/wiki/North_America">Your address</a></p>
             </div>
           </div>
         <hr>
@@ -149,15 +149,53 @@ $(document).ready(function(){
               <button type="button" class="btn btn-primary btn-sm">Report</button>
             </div>
         </div>
-       
-
       </div>
       <div class="cal-12 col-md-9 pull-md-3 right_wrapper">
         <div class="form-group">
           <label for="comment"></label>
           <textarea class="form-control active textara" rows="5" id="comment" placeholder="Write your text here..."></textarea>
+          <div class="row">
+              <div class="cal-12 col-md-6 push-md-6">
+                <label class="browse">
+                    <span class="glyphicon glyphicon-paperclip"></span> <input type="file" style="display: none;">
+                </label>
+              </div>
+          <div class="cal-12 col-md-6 pull-md-6"> 
+            <label class="btn btn-default btn-file Post">
+                Post
+            </label>
+          </div>
         </div>
+        <hr>
+        </div>
+              <!-- This is the post image section -->
+
+      <div class="post-section">
+        <div style="padding-bottom: 1%">
+          <span>
+            <img src="asset/profile-img/boy-512.png" class="post-image-profile" alt="profile-img" >&nbsp;
+            <a href="https://www.google.com" style="padding-top: 1%;"> First name</a></span>
+            <date style="float: right;"><span class="glyphicon glyphicon-time">&nbsp;02-20-2017</span></date>
+          </div>
+            <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+            <span class="glyphicon glyphicon-share-alt" style="padding-top: 1%; color: #0a7ed8;"><sub>20</sub></span>
+            <span class="glyphicon glyphicon-heart-empty" style="padding-top: 1%; color: red;"><sub>10</sub></span>
       </div>
+            <div class="post-section">
+        <div style="padding-bottom: 1%">
+          <span>
+            <img src="asset/profile-img/boy-512.png" class="post-image-profile" alt="profile-img" >&nbsp;
+            <a href="https://www.google.com" style="padding-top: 1%;"> First name</a></span>
+            <date style="float: right;"><span class="glyphicon glyphicon-time">&nbsp;02-20-2017</span></date>
+          </div>
+            <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+            <span class="glyphicon glyphicon-share-alt" style="padding-top: 1%;color: #0a7ed8;"><sub>20</sub></span>
+            <span class="glyphicon glyphicon-heart-empty" style="padding-top: 1%; color: red;"><sub>10</sub></span>
+      </div>
+      </div>
+
+
+
       </div>
     </div>
   </div>
