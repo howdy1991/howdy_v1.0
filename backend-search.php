@@ -17,7 +17,7 @@ if(isset($query)){
     if($result = mysqli_query($link, $sql)){
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_array($result)){
-                echo "<p>" . $row['first_name'] . "</p>";
+                echo "<p> <strong>" . $row['first_name'] . "</strong></p>";
             }
             // Close result set
             mysqli_free_result($result);

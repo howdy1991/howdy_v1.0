@@ -44,6 +44,24 @@ $(document).ready(function(){
         $(this).parent(".result").empty();
     });
 });
+
+//Tab JS
+
+function tabOpen(evt, tabname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active_tab", "");
+    }
+    document.getElementById(tabname).style.display = "block";
+    evt.currentTarget.className += " active_tab";
+}
+
+//Tab JS
 </script>
 <!-- This for the search section-->
 
@@ -52,7 +70,7 @@ $(document).ready(function(){
 <body>
 <div class="page">
 <div class="header">
-<nav class="navbar navbar-default " id="headernavigation">
+<nav class="navbar navbar-default navbar-fixed-top " id="headernavigation">
   <div class="container-fluid navigationmenu">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -68,7 +86,7 @@ $(document).ready(function(){
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" >
+      <ul class="nav navbar-nav">
         <li class="active" style="background-color: #20fcea;"><a href="#">Profile <span class="sr-only">(current)</span></a></li>
         <li><a href="#"><span class="ahypr">News</span></a></li>
         <li class="dropdown">
@@ -144,16 +162,33 @@ $(document).ready(function(){
           </div>
         <hr>
         <div class="left_lower">
-            <div class="btn-group btn-group-sm" role="group">
-              <button type="button" class="btn btn-primary btn-sm">Follow</button>
-              <button type="button" class="btn btn-primary btn-sm">Report</button>
-            </div>
+              <button type="button" class="btn btn-primary btn-sm butn001">Add As A Friend</button>
+              <button type="button" class="btn btn-primary btn-sm butn001">Follow</button>
+              <button type="button" class="btn btn-primary btn-sm butn001">Report</button>
+              
+            
         </div>
       </div>
       <div class="cal-12 col-md-9 pull-md-3 right_wrapper">
-        <div class="form-group">
-          <label for="comment"></label>
-          <textarea class="form-control active textara" rows="5" id="comment" placeholder="Write your text here..."></textarea>
+
+<!--  TAB SYSTEM -->
+<div class="container-fluid">
+  <div class="container-fluid tab_full">
+      <div class="tab">
+        <a href="javascript:void(0)" class="tablinks" onclick="tabOpen(event, 'Post&Comment')">Post & Comment</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="tabOpen(event, 'Gallery')">Gallery</a>
+        <a href="javascript:void(0)" class="tablinks" onclick="tabOpen(event, 'Videos')">Videos</a>
+      </div>
+  </div>
+
+<div id="Post&Comment" class="tabcontent">
+  
+<!--  TAB SYSTEM -->
+        
+
+        <div class="form-group right_viewport">
+          <label for="comment"><hr></label>
+          <textarea class="form-control " rows="5" id="comment" placeholder="Write your text here..."></textarea>
           <div class="row">
               <div class="cal-12 col-md-6 push-md-6">
                 <label class="browse">
@@ -169,7 +204,7 @@ $(document).ready(function(){
         <hr>
         </div>
               <!-- This is the post image section -->
-
+      <div class="Responce"><div class="text-center Responce"><p>Response</p></div></div>
       <div class="post-section">
         <div style="padding-bottom: 1%">
           <span>
@@ -177,21 +212,54 @@ $(document).ready(function(){
             <a href="https://www.google.com" style="padding-top: 1%;"> First name</a></span>
             <date style="float: right;"><span class="glyphicon glyphicon-time">&nbsp;02-20-2017</span></date>
           </div>
-            <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+
+              <div class="row">
+                <div class="cal-12 col-md-11 push-md-1 ">
+
+                  <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+
+                </div>
+                <div class="cal-12 col-md-1 push-md-11 ">
+
             <span class="glyphicon glyphicon-share-alt" style="padding-top: 1%; color: #0a7ed8;"><sub>20</sub></span>
             <span class="glyphicon glyphicon-heart-empty" style="padding-top: 1%; color: red;"><sub>10</sub></span>
+            </div>
+            </div>
       </div>
-            <div class="post-section">
+      <div class="post-section">
         <div style="padding-bottom: 1%">
           <span>
             <img src="asset/profile-img/boy-512.png" class="post-image-profile" alt="profile-img" >&nbsp;
             <a href="https://www.google.com" style="padding-top: 1%;"> First name</a></span>
             <date style="float: right;"><span class="glyphicon glyphicon-time">&nbsp;02-20-2017</span></date>
           </div>
-            <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
-            <span class="glyphicon glyphicon-share-alt" style="padding-top: 1%;color: #0a7ed8;"><sub>20</sub></span>
+
+              <div class="row">
+                <div class="cal-12 col-md-11 push-md-1 ">
+
+                  <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+
+                </div>
+                <div class="cal-12 col-md-1 push-md-11 ">
+
+            <span class="glyphicon glyphicon-share-alt" style="padding-top: 1%; color: #0a7ed8;"><sub>20</sub></span>
             <span class="glyphicon glyphicon-heart-empty" style="padding-top: 1%; color: red;"><sub>10</sub></span>
+            </div>
+            </div>
       </div>
+
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h3>Gallery</h3>
+  <p>Gallery section coming soon.</p> 
+</div>
+
+<div id="Videos" class="tabcontent">
+  <h3>Videos</h3>
+  <p>Videos section coming soon</p>
+</div>
+</div>
       </div>
 
 
