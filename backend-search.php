@@ -17,7 +17,17 @@ if(isset($query)){
     if($result = mysqli_query($link, $sql)){
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_array($result)){
-                echo "<p> <strong>" . $row['first_name'] . "</strong></p>";
+                echo "<div class='container-fluid'>
+                        <div class='cal-12 col-md-3 push-md-9'>
+                   <span>
+                    <img src='asset/profile-img/boy-512.png' class='post-image-profile' alt='profile-img' >  
+                    </div>
+                    <div class='cal-12 col-md-9 push-md-3'> 
+                    <p> <strong>" . $row['first_name'] . "</strong></p>
+                    
+                    </span>
+                    </div>
+                    </div>";
             }
             // Close result set
             mysqli_free_result($result);
