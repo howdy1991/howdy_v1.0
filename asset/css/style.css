@@ -121,7 +121,7 @@
     transition: 0.3s;
     font-size: 17px;
     }
-
+#fullname{border-left: 3px solid #286090; padding: 1%;}
 
 /* Change background color of links on hover */
 .tab a:hover {
@@ -145,5 +145,5 @@
 .image-holder{padding-top: 1%;}
             .imageupload {
                 margin: 20px 0;
-                
+
             }

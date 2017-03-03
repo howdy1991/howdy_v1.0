@@ -182,8 +182,8 @@ $(document).ready(function() {
   <div class="container-fluid">
     <div class="row">
       <div class="cal-12 col-md-3 push-md-9 left_wrapper">
-        <div class=left_upper>
-          <h3>Full Name</h3>
+        <div class="left_upper" >
+          <h3 id="fullname">Full Name</h3>
           <h4>Username</h4>
             <div class="about">
                <p>This is About You</p>
@@ -197,7 +197,7 @@ $(document).ready(function() {
               <p class="glyptext"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Office Name</p>
               <p class="glyptext"><span class="glyphicon glyphicon-education"></span>&nbsp;Education</p>
               <p class="glyptext"><span class="glyphicon glyphicon-envelope"></span>&nbsp;abx@gmail.com</p>
-              <p class="glyptext"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;abx@gmail.com</p>
+              <p class="glyptext"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;+91 999 999999</p>
               <p class="glyptext"><span class="glyphicon glyphicon-home"></span>&nbsp;<a href="https://en.wikipedia.org/wiki/North_America">Your address</a></p>
             </div>
           </div>
@@ -275,7 +275,7 @@ $(document).ready(function() {
               <div class="row">
                 <div class="cal-12 col-md-11 push-md-1 ">
 
-                  <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+                  <p style="padding: 1%; border: 1px solid #dadada;border-left: 3px solid #286090;">This is test</p>
 
                 </div>
                 <div class="cal-12 col-md-1 push-md-11 ">
@@ -296,7 +296,7 @@ $(document).ready(function() {
               <div class="row">
                 <div class="cal-12 col-md-11 push-md-1 ">
 
-                  <p style="border: 1px solid #d6d6d6; padding: 1%;">This is test</p>
+                  <p style="border: 1px solid #dadada; padding: 1%; border-left: 3px solid #286090;">This is test</p>
 
                 </div>
                 <div class="cal-12 col-md-1 push-md-11 ">
