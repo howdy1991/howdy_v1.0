@@ -276,8 +276,8 @@ $(document).ready(function() {
                                                 </div>
 
                                                 <div class="modal-footer">
-                                                    <button class="btn btn-info" type="button" onclick="modal.close();">Cancel</button>
-                                                    <button class="btn btn-success" type="submit" onclick="modal.close();">Send</button>
+                                                    <button class="btn btn-default" type="button" onclick="modal.close();">Cancel</button>
+                                                    <button class="btn btn-primary" type="submit" onclick="modal.close();">Save</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -313,17 +313,11 @@ $(document).ready(function() {
         
       </div>
   </div>
-      <div id="Friends" class="tabcontent">
-        <h3>Friends <br><hr></h3>
-             <div class="row">
-              <div class="cal-12 col-md-3 push-md-9">
-              <img src="asset/profile-img/boy-512.png" style="border:3px solid white; display: inline-block; border-radius: 2px;width: 75%; background-color: #f3f3f3; padding: 10px;" alt="profile-img" />
-              <h4>Full Name</h4>
-              <p>Address</p>
-              </div>
-             </div> 
-      </div>
-      <div id="Post&Comment" class="tabcontent">
+<div id="Friends" class="tabcontent">
+  <h3>Friends</h3>
+  <p>Friends section coming soon</p>
+</div>
+<div id="Post&Comment" class="tabcontent">
   
 <!--  TAB SYSTEM -->
         

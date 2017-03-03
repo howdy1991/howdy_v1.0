@@ -126,11 +126,14 @@
 /* Change background color of links on hover */
 .tab a:hover {
     background-color: #ddd;
+    
 }
 
 /* Create an active/current tablink class */
 .tab a:focus, .active_tab {
     border-top: 5px solid #0094ae;
+    color: #0094ae;
+    font-weight: bold;
 }
 
 /* Style the tab content */
