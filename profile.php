@@ -231,9 +231,9 @@ $(document).ready(function() {
       <div class="cal-12 col-md-3 push-md-9 left_wrapper">
         <div class="left_upper" >
           <h3 id="fullname">Full Name</h3>
-          <h4>Username</h4>
+          <h6>Username</h6>
             <div class="about">
-               <p>This is About You</p>
+               <p id="fullname">This is About You</p>
                <p class="glyptext"><span class="glyphicon glyphicon-star"></span>&nbsp;Liked By  <span style="color: #0094ae;"><strong>99</strong></span>Persons</p>
             </div>
         </div>
