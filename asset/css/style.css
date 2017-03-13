@@ -150,3 +150,10 @@
                 margin: 20px 0;
 
             }
+
+.settings_tab{padding-left: 10%; padding-right: 10%;margin-top: 1%; text-align: center;}
+.security{width: 100%; padding-top: 1%;}
+
+.settings-general-check{width: 100%; text-align: left; padding-left: 5%; padding-right: 5%;}
+.gender-1{font-weight: 900;}
+.block-content{background-color: rgba(133, 175, 183, 0.47); width: 100%; }
